@@ -107,6 +107,11 @@ const MapComponent: React.FC = () => {
           </>
         )}
       </GoogleMap>
+      <div>
+        Please use a shortened url link pattern, like:
+        `https://maps.app.goo.gl/xxx`. Google Maps app will provide a shortened
+        URL via the `Share` button.
+      </div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-2">
         {/* Label and input field for the map link */}
         <div>
