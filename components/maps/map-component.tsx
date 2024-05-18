@@ -15,6 +15,7 @@ const defaultMapOptions = {
 
 const defaultMapZoom = 18;
 
+//Please use a shortened url link pattern, like: `https://maps.app.goo.gl/xxx`. Google Maps app will provide a shortened URL via the `Share` button.
 const info = {
   title: "The Empire State Building",
   address: "20 W 34th St., New York, NY 10001, United States",
@@ -107,11 +108,7 @@ const MapComponent: React.FC = () => {
           </>
         )}
       </GoogleMap>
-      <div>
-        Please use a shortened url link pattern, like:
-        `https://maps.app.goo.gl/xxx`. Google Maps app will provide a shortened
-        URL via the `Share` button.
-      </div>
+
       <form onSubmit={handleSubmit} className="flex flex-col gap-2">
         {/* Label and input field for the map link */}
         <div>
@@ -128,6 +125,11 @@ const MapComponent: React.FC = () => {
             placeholder="Enter the map link"
             className="border border-gray-300 rounded-md p-2 w-full text-black"
           />
+          <div className="text-sm text-gray-500">
+            Please use a shortened url link pattern, like:
+            `https://maps.app.goo.gl/xxx`. Google Maps app will provide a
+            shortened URL via the `Share` button.
+          </div>
         </div>
 
         {/* Label and input field for the map title */}
