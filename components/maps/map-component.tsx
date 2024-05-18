@@ -95,7 +95,7 @@ const MapComponent: React.FC = () => {
                     <div>{mapInfo.address}</div>
                     <Link
                       target="_blank"
-                      href={info.link}
+                      href={mapInfo.link}
                       className="font-semibold text-blue-500 hover:underline"
                     >
                       View on Google Maps
